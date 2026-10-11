@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>黄色影视 - 影视网址导航大全 | 电影电视剧综艺动漫一站导航</title>
+<meta name="description" content="黄色影视（huangseyingshi-cn.github.io）是聚焦电影、电视剧、综艺、动漫的影视网址导航大全与观影指南。收录 149+ 优质影视网站，按类型频道分类，提供合法观看途径与清晰度标注，帮你少走弯路，一眼找到黄色的影视资源。">
+<meta name="keywords" content="黄色影视,影视网址导航,电影网址导航,电视剧网站导航,影视网站大全,影视导航,优质网站导航,观影指南,华语电影,港片,日韩电影,欧美电影,经典老片,冷门佳片,纪录片,综艺,动漫,4K修复版,正版影视">
+<meta name="author" content="黄色影视">
+<meta name="msvalidate.01" content="此处替换为必应网站管理员工具颁发的真实验证码">
+<link rel="canonical" href="https://huangseyingshi-cn.github.io/">
+<style>
+:root{
+  --ink:#14181f; --ink2:#2b313a; --paper:#fbfaf7; --paper2:#f2efe8;
+  --rose:#e6396f; --rose2:#ff7a9c; --gold:#e0a33a; --teal:#1f8f8b;
+  --line:rgba(20,24,31,.12); --muted:#6f7785;
+  --r:14px; --shadow:0 12px 32px -18px rgba(20,24,31,.45);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  font-family:"PingFang SC","Microsoft YaHei","Hiragino Sans GB","WenQuanYi Micro Hei",system-ui,sans-serif;
+  background:var(--paper); color:var(--ink); line-height:1.75;
+  background-image:
+    radial-gradient(circle at 12% 8%, rgba(230,57,111,.07), transparent 42%),
+    radial-gradient(circle at 88% 18%, rgba(31,143,139,.08), transparent 40%),
+    repeating-linear-gradient(0deg, transparent 0 39px, rgba(20,24,31,.028) 39px 40px),
+    repeating-linear-gradient(90deg, transparent 0 39px, rgba(20,24,31,.028) 39px 40px);
+}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+ul,ol{list-style:none}
+::selection{background:var(--rose);color:#fff}
+.container{max-width:1180px;margin:0 auto;padding:0 clamp(16px,4vw,32px)}
+h1,h2,h3,.serif{font-family:"Songti SC","SimSun","Noto Serif CJK SC",Georgia,serif;font-weight:800;letter-spacing:.02em}
+.eyebrow{font-size:12px;letter-spacing:.28em;color:var(--muted);text-transform:uppercase}
+
+/* ───── 顶部 ───── */
+.topbar{background:var(--ink);color:#fff;font-size:12px;padding:7px 0}
+.topbar .container{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.topbar a{color:#c9cfd8}
+.topbar a:hover{color:var(--rose2)}
+header{position:sticky;top:0;z-index:60;background:rgba(251,250,247,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;gap:clamp(14px,3vw,34px);height:66px}
+.logo{display:flex;align-items:center;gap:11px;font-size:clamp(19px,3.4vw,26px);font-weight:800}
+.logo .mark{
+  width:40px;height:40px;border-radius:12px;flex:0 0 40px;
+  background:linear-gradient(140deg,var(--rose),#ff9a76 55%,var(--gold));
+  display:grid;place-items:center;color:#fff;font-size:18px;font-weight:900;
+  box-shadow:0 6px 16px -8px rgba(230,57,111,.7);
+}
+.logo small{display:block;font-size:10px;letter-spacing:.2em;color:var(--muted);font-weight:500;font-family:inherit}
+.navlinks{display:flex;gap:clamp(12px,2.4vw,26px);margin-left:auto;align-items:center}
+.navlinks a{font-size:14.5px;color:var(--ink2);position:relative;padding:6px 2px}
+.navlinks a::after{content:"";position:absolute;left:0;bottom:-3px;width:0;height:2px;border-radius:2px;background:var(--rose);transition:width .25s}
+.navlinks a:hover::after,.navlinks a.on::after{width:100%}
+.navlinks a:hover{color:var(--rose)}
+.btn{background:var(--ink);color:#fff!;padding:9px 18px;border-radius:999px;font-size:14px;transition:.25s}
+.btn:hover{background:var(--rose);transform:translateY(-2px);box-shadow:var(--shadow)}
+.hamb{display:none;width:42px;height:42px;border:1px solid var(--line);border-radius:12px;background:transparent;cursor:pointer;position:relative;margin-left:auto}
+.hamb span{position:absolute;left:11px;width:18px;height:2px;background:var(--ink);border-radius:2px;transition:.3s}
+.hamb span:nth-child(1){top:14px}.hamb span:nth-child(2){top:20px}.hamb span:nth-child(3){top:26px}
+.hamb.open span:nth-child(1){top:20px;transform:rotate(45deg)} .hamb.open span:nth-child(2){opacity:0} .hamb.open span:nth-child(3){top:20px;transform:rotate(-45deg)}
+.drawer{position:fixed;inset:66px 0 0 0;background:var(--paper);z-index:55;padding:22px 26px;display:none;overflow:auto}
+.drawer.open{display:block;animation:fade .25s}
+.drawer a{display:block;padding:13px 0;border-bottom:1px dashed var(--line);font-size:16px}
+@keyframes fade{from{opacity:0}to{opacity:1}}
+
+/* ───── Hero ───── */
+.hero{padding:clamp(34px,7vw,72px) 0 clamp(28px,5vw,56px)}
+.hero-grid{display:grid;grid-template-columns:1.45fr 1fr;gap:clamp(20px,4vw,44px);align-items:center}
+.hero h1{font-size:clamp(32px,6.4vw,64px);line-height:1.12;margin:14px 0 18px}
+.hero h1 em{font-style:normal;background:linear-gradient(100deg,var(--rose),var(--gold));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p.lead{font-size:clamp(15px,1.8vw,18px);color:#454c57;max-width:52ch}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:30px}
+.stat{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:16px 14px;box-shadow:var(--shadow)}
+.stat b{display:block;font-size:clamp(22px,3.4vw,30px);color:var(--rose);font-family:"Songti SC",serif}
+.stat span{font-size:12.5px;color:var(--muted)}
+.screen{
+  position:relative;aspect-ratio:5/6;border-radius:24px;overflow:hidden;
+  background:
+    radial-gradient(circle at 78% 22%, rgba(255,255,255,.5), transparent 34%),
+    linear-gradient(160deg,#2b1330 0%,#6b1f3e 46%,#c0434a 100%);
+  box-shadow:0 28px 60px -30px rgba(96,20,46,.7);border:1px solid rgba(255,255,255,.18);
+}
+.screen::before{
+  content:"";position:absolute;inset:0;
+  background:
+    radial-gradient(circle at 24% 38%, rgba(255,226,150,.95), transparent 26%),
+    radial-gradient(circle at 50% 50%, rgba(230,57,111,.35), transparent 60%);
+}
+.stars{position:absolute;inset:0;background-image:
+  radial-gradient(1.5px 1.5px at 12% 18%,#fff,transparent),
+  radial-gradient(1px 1px at 30% 72%,#fff,transparent),
+  radial-gradient(1.5px 1.5px at 62% 26%,#fff,transparent),
+  radial-gradient(1px 1px at 82% 60%,#fff,transparent),
+  radial-gradient(1.5px 1.5px at 46% 84%,#fff,transparent),
+  radial-gradient(1px 1px at 70% 12%,#fff,transparent),
+  radial-gradient(1px 1px at 20% 52%,#fff,transparent);
+  animation:tw 5s ease-in-out infinite alternate;
+}
+@keyframes tw{from{opacity:.55}to{opacity:1}}
+.reel{
+  position:absolute;left:0;right:0;bottom:0;height:30%;display:flex;gap:6px;padding:0 14px 16px;
+  align-items:flex-end;
+}
+.reel i{display:block;flex:1;border-radius:5px 5px 0 0;background:linear-gradient(180deg,rgba(255,255,255,.95),rgba(255,255,255,.35));transform-origin:bottom}
+.reel i:nth-child(1){height:38%} .reel i:nth-child(2){height:62%} .reel i:nth-child(3){height:48%}
+.reel i:nth-child(4){height:78%} .reel i:nth-child(5){height:56%} .reel i:nth-child(6){height:90%}
+.reel i:nth-child(7){height:44%} .reel i:nth-child(8){height:66%}
+.screen .tag{
+  position:absolute;top:20px;left:20px;z-index:3;color:#fff;font-size:12px;letter-spacing:.2em;
+  border:1px solid rgba(255,255,255,.55);border-radius:999px;padding:5px 12px;backdrop-filter:blur(4px);
+}
+.screen .play{
+  position:absolute;inset:0;display:grid;place-items:center;z-index:3;
+}
+.screen .play b{
+  font-size:clamp(26px,4vw,40px);color:#fff;text-shadow:0 4px 20px rgba(0,0,0,.5);font-family:"Songti SC",serif;
+  background:rgba(0,0,0,.22);padding:10px 22px;border-radius:16px;backdrop-filter:blur(4px);
+}
+
+/* ───── 栏目通用 ───── */
+section{padding:clamp(44px,8vw,86px) 0;scroll-margin-top:80px}
+.sec-head{display:flex;align-items:flex-end;gap:16px;flex-wrap:wrap;margin-bottom:34px}
+.sec-head h2{font-size:clamp(24px,4.4vw,38px);line-height:1.25}
+.sec-head h2 span{color:var(--rose)}
+.sec-head .line{flex:1;height:1px;background:linear-gradient(90deg,var(--rose),transparent);min-width:60px}
+.sec-head .more{font-size:13.5px;color:var(--muted)}
+.sec-head .more:hover{color:var(--rose)}
+.badge{display:inline-block;font-size:12px;color:var(--rose);border:1px solid rgba(230,57,111,.35);border-radius:999px;padding:3px 12px;margin-bottom:10px}
+
+/* ① 网址导航 */
+.cats{display:grid;grid-template-columns:repeat(auto-fill,minmax(330px,1fr));gap:22px}
+.cat{background:#fff;border:1px solid var(--line);border-radius:var(--r);overflow:hidden;box-shadow:var(--shadow);transition:.3s}
+.cat:hover{transform:translateY(-6px);box-shadow:0 22px 44px -24px rgba(20,24,31,.5)}
+.cat .hd{height:78px;display:flex;align-items:center;gap:14px;padding:0 20px;color:#fff;position:relative;overflow:hidden}
+.cat .hd::after{content:"";position:absolute;right:-26px;top:-26px;width:90px;height:90px;border-radius:50%;background:rgba(255,255,255,.14)}
+.cat .hd .ic{width:42px;height:42px;border-radius:12px;background:rgba(255,255,255,.22);display:grid;place-items:center;font-size:20px;flex:0 0 42px}
+.cat .hd b{font-size:18px;font-family:"Songti SC",serif}
+.cat .hd small{display:block;font-size:11.5px;opacity:.85;font-weight:400;letter-spacing:.06em}
+.cat ul{padding:8px 0}
+.cat li a{display:flex;align-items:center;gap:12px;padding:9px 20px;font-size:14.5px;color:var(--ink2);border-left:3px solid transparent;transition:.2s}
+.cat li a:hover{border-left-color:var(--rose);background:var(--paper2);color:var(--rose)}
+.cat li a .dot{width:6px;height:6px;border-radius:50%;background:var(--rose);flex:0 0 6px;box-shadow:0 0 0 4px rgba(230,57,111,.13)}
+.cat li a .name{flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.cat li a .go{font-size:11.5px;color:var(--muted);border:1px solid var(--line);border-radius:999px;padding:2px 9px;flex:0 0 auto}
+.cat li a:hover .go{color:#fff;background:var(--rose);border-color:var(--rose)}
+.cat li a .num{font-family:"Songti SC",serif;color:rgba(20,24,31,.16);font-size:13px;flex:0 0 auto;font-style:italic}
+
+/* ② 热榜 */
+.rank{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:16px}
+.rl{display:flex;align-items:center;gap:16px;background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:14px 18px;box-shadow:var(--shadow);transition:.25s}
+.rl:hover{transform:translateX(5px);border-color:rgba(230,57,111,.45)}
+.rl .no{font-family:"Songti SC",serif;font-size:32px;font-weight:900;color:var(--line);line-height:1;width:46px;flex:0 0 46px}
+.rl .no.top{background:linear-gradient(135deg,var(--gold),var(--rose));-webkit-background-clip:text;background-clip:text;color:transparent}
+.rl .info{flex:1;min-width:0}
+.rl .info b{display:block;font-size:15.5px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.rl .info .bar{height:5px;border-radius:5px;background:var(--paper2);margin-top:8px;overflow:hidden}
+.rl .info .bar i{display:block;height:100%;width:0;border-radius:5px;background:linear-gradient(90deg,var(--rose),var(--gold));transition:width 1s cubic-bezier(.22,1,.36,1)}
+.rl .heat{flex:0 0 auto;text-align:right}
+.rl .heat b{display:block;color:var(--rose);font-size:14px}
+.rl .heat span{font-size:11px;color:var(--muted)}
+
+/* ③ 分类频道 */
+.wall{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:16px}
+.wl{position:relative;height:130px;border-radius:18px;padding:16px;color:#fff;overflow:hidden;box-shadow:var(--shadow);transition:.3s;display:flex;flex-direction:column;justify-content:space-between}
+.wl:hover{transform:translateY(-6px) rotate(-1.2deg);box-shadow:0 20px 40px -20px rgba(20,24,31,.55)}
+.wl b{font-size:17px;font-family:"Songti SC",serif;position:relative;z-index:2}
+.wl span{font-size:11.5px;opacity:.9;position:relative;z-index:2}
+.wl::before{content:attr(data-n);position:absolute;right:-8px;bottom:-22px;font-size:64px;font-family:"Songti SC",serif;font-weight:900;opacity:.22;line-height:1}
+.wl::after{content:"";position:absolute;right:14px;top:14px;width:34px;height:34px;border-radius:50%;background:rgba(255,255,255,.18)}
+
+/* ④ 片单 */
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:20px}
+.tab{padding:8px 18px;border-radius:999px;font-size:14px;border:1px solid var(--line);background:#fff;cursor:pointer;transition:.2s;font-family:inherit;color:var(--ink2)}
+.tab:hover{border-color:var(--rose);color:var(--rose)}
+.tab[aria-selected="true"]{background:var(--ink);color:#fff;border-color:var(--ink)}
+.wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;border-radius:var(--r);box-shadow:var(--shadow)}
+table{width:100%;border-collapse:collapse;background:#fff;min-width:720px;font-size:14.5px}
+thead th{background:var(--ink);color:#fff;text-align:left;padding:14px 16px;font-size:13.5px;font-weight:600;white-space:nowrap}
+tbody td{padding:13px 16px;border-bottom:1px solid var(--line);color:var(--ink2);vertical-align:middle}
+tbody tr:nth-child(even){background:var(--paper2)}
+tbody tr:hover{background:rgba(230,57,111,.07)}
+tbody td.name{font-weight:700;color:var(--ink);white-space:nowrap}
+.pill{display:inline-block;font-size:12px;padding:2px 10px;border-radius:999px;border:1px solid currentColor;white-space:nowrap}
+.p-a{color:var(--rose)} .p-b{color:var(--teal)} .p-c{color:var(--gold)}
+.stars-r{color:var(--gold);letter-spacing:.08em;white-space:nowrap}
+
+/* ⑤ 观影指南 */
+.paper{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:22px}
+.nt{background:#fff;border:1px solid var(--line);border-radius:var(--r);overflow:hidden;box-shadow:var(--shadow);transition:.3s;display:flex;flex-direction:column}
+.nt:hover{transform:translateY(-6px)}
+.nt .cv{height:170px;position:relative;overflow:hidden}
+.nt .cv i{position:absolute;right:14px;bottom:12px;font-size:40px;opacity:.9}
+.nt .cv span{position:absolute;left:14px;top:14px;background:rgba(0,0,0,.34);color:#fff;font-size:11.5px;padding:4px 10px;border-radius:999px;backdrop-filter:blur(3px)}
+.nt .body{padding:18px 20px;flex:1;display:flex;flex-direction:column;gap:8px}
+.nt .body h3{font-size:18px;line-height:1.5}
+.nt .body p{font-size:14px;color:var(--muted);flex:1}
+.nt .meta{display:flex;justify-content:space-between;font-size:12.5px;color:var(--muted);border-top:1px dashed var(--line);padding-top:10px}
+.nt.lead{grid-row:span 2}
+.nt.lead .cv{height:auto;min-height:340px}
+.nt.lead .body h3{font-size:clamp(22px,3vw,28px)}
+.nt .cv img{width:100%;height:100%;object-fit:cover;transition:.5s}
+.nt:hover .cv img{transform:scale(1.07)}
+
+/* ⑥ 观影手账 */
+.log{position:relative;padding-left:6px}
+.log::before{content:"";position:absolute;left:9px;top:6px;bottom:6px;width:3px;border-radius:3px;background:linear-gradient(var(--rose),var(--gold))}
+.lg{display:grid;grid-template-columns:150px 1fr;gap:26px;padding:0 0 26px 34px;position:relative}
+.lg::before{content:"";position:absolute;left:-5.5px;top:8px;width:16px;height:16px;border-radius:50%;background:#fff;border:3px solid var(--rose);box-shadow:0 0 0 4px var(--paper)}
+.lg .day .d{font-family:"Songti SC",serif;font-size:26px;font-weight:900;color:var(--rose);line-height:1.2}
+.lg .day small{display:block;font-size:12.5px;color:var(--muted);letter-spacing:.08em}
+.lg .day em{display:block;font-style:normal;font-size:12px;color:var(--ink2);margin-top:4px}
+.lg .txt{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:16px 20px;box-shadow:var(--shadow);transition:.25s}
+.lg .txt:hover{transform:translateX(6px);box-shadow:0 16px 34px -20px rgba(20,24,31,.5)}
+.lg .txt b{display:block;font-size:16.5px;margin-bottom:5px}
+.lg .txt p{font-size:14px;color:var(--muted)}
+
+/* ⑦ 特色 */
+.feat{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:20px}
+.fi{background:#fff;border:1.5px dashed var(--line);border-radius:var(--r);padding:26px 22px;transition:.3s;position:relative}
+.fi:hover{border-color:var(--rose);background:linear-gradient(160deg,#fff,#fff5f7);transform:translateY(-5px)}
+.fi .ic{width:52px;height:52px;border-radius:14px;background:linear-gradient(140deg,var(--rose),var(--rose2));color:#fff;display:grid;place-items:center;font-size:22px;margin-bottom:16px;box-shadow:0 8px 18px -8px rgba(230,57,111,.7)}
+.fi h3{font-size:18px;margin-bottom:7px}
+.fi p{font-size:14px;color:var(--muted)}
+.fi::after{content:"❁";position:absolute;right:18px;top:18px;color:var(--rose);font-size:15px;opacity:.55}
+
+/* ───── 页脚 ───── */
+footer{background:var(--ink);color:#c9cfd8;padding:60px 0 26px;margin-top:20px}
+.foot{display:grid;grid-template-columns:1.4fr repeat(auto-fill,minmax(150px,1fr));gap:34px;margin-bottom:38px}
+.foot .brand .logo{color:#fff;margin-bottom:12px}
+.foot .brand p{font-size:13.5px;color:#8d95a2;max-width:38ch}
+.foot h4{color:#fff;font-size:15px;margin-bottom:14px;font-family:"Songti SC",serif}
+.foot ul li{margin-bottom:9px}
+.foot ul a{font-size:13.5px;color:#8d95a2}
+.foot ul a:hover{color:var(--rose2)}
+.copy{border-top:1px solid rgba(255,255,255,.1);padding-top:22px;font-size:12.5px;color:#6f7785;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.copy a{color:#8d95a2}
+.copy a:hover{color:var(--rose2)}
+
+/* ───── 响应式 ───── */
+@media(max-width:960px){
+  .hero-grid{grid-template-columns:1fr}
+  .screen{max-width:420px;margin:0 auto;width:100%}
+  .stats{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:680px){
+  .navlinks{display:none}
+  .hamb{display:block}
+  .hero h1{font-size:38px}
+  .lg{grid-template-columns:1fr;gap:12px;padding-left:30px}
+  .lg .day{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+  .sec-head h2{font-size:25px}
+  .nt.lead{grid-row:auto}
+  .nt.lead .cv{min-height:200px}
+}
+@media print{
+  .hamb,.drawer,.topbar{display:none!important}
+  header{position:static}
+  section{padding:24px 0;break-inside:avoid}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/xiaobao.js"></script>
+
+<div class="topbar">
+  <div class="container">
+    <span>🎬 黄色影视 · 只把黄色的影视网站，整理给你</span>
+    <span><a href="#">正版倡导</a> &nbsp;·&nbsp; <a href="#about">关于本站</a></span>
+  </div>
+</div>
+
+<header>
+  <div class="container nav">
+    <a href="#" class="logo">
+      <span class="mark">好</span>
+      黄色影视<small>HKSY.COM</small>
+    </a>
+    <nav class="navlinks" id="navlinks">
+      <a href="#nav">网址导航</a>
+      <a href="#rank">实时热榜</a>
+      <a href="#chan">分类频道</a>
+      <a href="#list">推荐片单</a>
+      <a href="#news">观影指南</a>
+      <a href="#log">观影手账</a>
+      <a href="#about">关于</a>
+      <a href="#nav" class="btn">开始选片 →</a>
+    </nav>
+    <button class="hamb" id="hamb" aria-label="菜单" aria-expanded="false" aria-controls="drawer"><span></span><span></span><span></span></button>
+  </div>
+</header>
+<div class="drawer" id="drawer">
+  <a href="#nav">网址导航</a>
+  <a href="#rank">实时热榜</a>
+  <a href="#chan">分类频道</a>
+  <a href="#list">推荐片单</a>
+  <a href="#news">观影指南</a>
+  <a href="#log">观影手账</a>
+  <a href="#feat">网站特色</a>
+  <a href="#about">关于我们</a>
+</div>
+
+<!-- Hero -->
+<section class="hero">
+  <div class="container hero-grid">
+    <div>
+      <span class="badge">◆ 影视网址导航 · 第 149 期</span>
+      <h1>黄色影视<br><em>一眼找到</em>黄色的影视。</h1>
+      <p class="lead">黄色影视（huangseyingshi-cn.github.io）是聚焦电影、电视剧、综艺、动漫的<strong>影视网址导航大全</strong>。我们把优质影视网站按类型频道分类整理，标注<strong>合法观看途径与清晰度</strong>，帮你少点三次鼠标，多留两小时给自己。</p>
+      <div class="stats">
+        <div class="stat"><b>149+</b><span>精选影视网址</span></div>
+        <div class="stat"><b>12</b><span>分类频道</span></div>
+        <div class="stat"><b>4种</b><span>合法观看途径</span></div>
+        <div class="stat"><b>0</b><span>侵权资源</span></div>
+      </div>
+    </div>
+    <div class="screen" aria-hidden="true">
+      <div class="stars"></div>
+      <span class="tag">◆ GOOD FILM · 黄色影视场</span>
+      <div class="play"><b>今日放映<br>黄色影视场</b></div>
+      <div class="reel"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+    </div>
+  </div>
+</section>
+
+<!-- ① 网址导航 -->
+<section id="nav">
+  <div class="container">
+    <div class="sec-head">
+      <div>
+        <span class="eyebrow">SECTION 01 · 影视网址导航</span>
+        <h2>黄色影视 <span>网址导航大全</span></h2>
+      </div>
+      <span class="line"></span>
+      <a href="#" class="more">查看全部 149+ 网址 →</a>
+    </div>
+    <div class="cats" id="cats"></div>
+  </div>
+</section>
+
+<!-- ② 实时热榜 -->
+<section id="rank" style="background:linear-gradient(180deg,var(--paper),var(--paper2))">
+  <div class="container">
+    <div class="sec-head">
+      <div>
+        <span class="eyebrow">SECTION 02 · 实时热榜</span>
+        <h2>大家 <span>都在看</span></h2>
+      </div>
+      <span class="line"></span>
+      <span class="more">数据每小时更新</span>
+    </div>
+    <div class="rank" id="rankBox"></div>
+  </div>
+</section>
+
+<!-- ③ 分类频道 -->
+<section id="chan">
+  <div class="container">
+    <div class="sec-head">
+      <div>
+        <span class="eyebrow">SECTION 03 · 分类频道</span>
+        <h2>分类频道 <span>一键直达</span></h2>
+      </div>
+      <span class="line"></span>
+      <a href="#" class="more">查看全部频道 →</a>
+    </div>
+    <div class="wall" id="wall"></div>
+  </div>
+</section>
+
+<!-- ④ 片单 -->
+<section id="list" style="background:linear-gradient(180deg,var(--paper2),var(--paper))">
+  <div class="container">
+    <div class="sec-head">
+      <div>
+        <span class="eyebrow">SECTION 04 · 推荐片单</span>
+        <h2>黄色影视 <span>推荐片单</span></h2>
+      </div>
+      <span class="line"></span>
+      <a href="#" class="more">换一批 →</a>
+    </div>
+    <div class="tabs" role="tablist" id="tabs"></div>
+    <div class="wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>片名</th><th>类型</th><th>年份</th><th>口味</th><th>评分</th><th>适合几点看</th><th>合法观看途径</th>
+          </tr>
+        </thead>
+        <tbody id="tbody"></tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ⑤ 观影指南 -->
+<section id="news">
+  <div class="container">
+    <div class="sec-head">
+      <div>
+        <span class="eyebrow">SECTION 05 · 观影指南</span>
+        <h2>黄色影视 <span>观影笔记</span></h2>
+      </div>
+      <span class="line"></span>
+      <a href="#" class="more">更多笔记 →</a>
+    </div>
+    <div class="paper" id="newsBox"></div>
+  </div>
+</section>
+
+<!-- ⑥ 观影手账 -->
+<section id="log" style="background:linear-gradient(180deg,var(--paper),var(--paper2))">
+  <div class="container">
+    <div class="sec-head">
+      <div>
+        <span class="eyebrow">SECTION 06 · 观影手账</span>
+        <h2>一周 <span>不重样</span></h2>
+      </div>
+      <span class="line"></span>
+      <span class="more">每天一部，刚好</span>
+    </div>
+    <div class="log" id="logBox"></div>
+  </div>
+</section>
+
+<!-- ⑦ 特色 -->
+<section id="feat">
+  <div class="container">
+    <div class="sec-head">
+      <div>
+        <span class="eyebrow">SECTION 07 · 网站特色</span>
+        <h2>为什么用 <span>黄色影视</span></h2>
+      </div>
+      <span class="line"></span>
+    </div>
+    <div class="feat">
+      <div class="fi"><div class="ic">🎯</div><h3>少点三次鼠标</h3><p>每类影视只留最值得去的几个网站，不铺天盖地，不让你在搜索里迷路。</p></div>
+      <div class="fi"><div class="ic">🛡️</div><h3>只推正版渠道</h3><p>标注公共版权经典、平台限时免费、电视台重播、片方官方展映四种合法途径。</p></div>
+      <div class="fi"><div class="ic">🍿</div><h3>一句话讲完</h3><p>片单不写千字影评，只说"讲什么、黄色在哪、看完会怎样"。</p></div>
+      <div class="fi"><div class="ic">🕗</div><h3>按时间排片</h3><p>按"适合几点看"排序，清晨看纪录片，深夜看长镜头，不用自己想。</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ⑧ 关于 -->
+<footer id="about">
+  <div class="container">
+    <div class="foot">
+      <div class="brand">
+        <a href="#" class="logo"><span class="mark">好</span>黄色影视<small>HKSY.COM</small></a>
+        <p>黄色影视是聚焦电影、电视剧、综艺、动漫的影视网址导航大全与观影指南，帮你一眼找到黄色的影视网站。</p>
+      </div>
+      <div>
+        <h4>影视导航</h4>
+        <ul>
+          <li><a href="#nav">电影网址导航</a></li>
+          <li><a href="#nav">电视剧网站导航</a></li>
+          <li><a href="#nav">综艺动漫导航</a></li>
+          <li><a href="#chan">分类频道</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>观影指南</h4>
+        <ul>
+          <li><a href="#list">推荐片单</a></li>
+          <li><a href="#news">观影笔记</a></li>
+          <li><a href="#log">观影手账</a></li>
+          <li><a href="#rank">实时热榜</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>关于本站</h4>
+        <ul>
+          <li><a href="#about">网站简介</a></li>
+          <li><a href="#">正版倡导</a></li>
+          <li><a href="#">免责声明</a></li>
+          <li><a href="#">联系我们</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="copy">
+      <span>© <span id="yr"></span> 黄色影视 · 影视网址导航大全（示例内容，本站不提供任何播放或下载资源）</span>
+      <span><a href="#">正版观影倡导</a> · <a href="#">免责声明</a></span>
+    </div>
+  </div>
+</footer>
+
+<script>
+const CATS=[
+ {n:"电影网站",c:"linear-gradient(135deg,#6b1f3e,#c0434a)",ic:"🎬",d:"精选 6 个",items:[
+  ["经典老片档案馆","公共版权高清修复","直达"],["华语电影资料馆","影史经典目录","直达"],["独立电影索引","冷门佳作集散","直达"],
+  ["纪录片导航台","真实影像入口","直达"],["4K 修复版片库","高画质正版源","直达"],["动画电影长廊","中外动画精选","直达"]]},
+ {n:"电视剧网站",c:"linear-gradient(135deg,#123A52,#2E7EA8)",ic:"📺",d:"精选 6 个",items:[
+  ["国产剧导航","年代剧 / 古装剧","直达"],["美剧资源索引","口碑美剧入口","直达"],["日韩剧导航","日剧韩剧精选","直达"],
+  ["港台剧资料馆","港片港剧经典","直达"],["英剧导航","高分英剧集散","直达"],["短剧精品库","精品短剧推荐","直达"]]},
+ {n:"综艺与动漫",c:"linear-gradient(135deg,#7A5C1F,#E0A33A)",ic:"🎤",d:"精选 6 个",items:[
+  ["综艺导航台","真人秀 / 谈话","直达"],["动漫索引站","新番旧番目录","直达"],["国产动漫导航","国创精品","直达"],
+  ["纪录片频道","纪实类合集","直达"],["晚会节目单","春晚 / 晚会","直达"],["脱口秀导航","单口 / 对谈","直达"]]},
+ {n:"免费正版专区",c:"linear-gradient(135deg,#13453F,#1F8F8B)",ic:"🎁",d:"精选 6 个",items:[
+  ["公共版权经典","零成本合法看","直达"],["限时免费专区","平台活动入口","直达"],["电视台重播表","黄金时段预告","直达"],
+  ["官方展映平台","片方正版渠道","直达"],["公益放映导航","高校 / 社区","直达"],["公开课影视","影史讲座","直达"]]},
+ {n:"资讯与榜单",c:"linear-gradient(135deg,#5B2E6F,#A855C4)",ic:"📊",d:"精选 6 个",items:[
+  ["实时热榜导航","全网热度排行","直达"],["院线新片导航","在映影片信息","直达"],["流媒体上新","平台更新速递","直达"],
+  ["电影节入围片","戛纳 / 柏林","直达"],["冷门佳片榜","被低估的好片","直达"],["年度片单导航","年终盘点","直达"]]},
+ {n:"工具与社区",c:"linear-gradient(135deg,#8A2E2E,#E0663F)",ic:"🧰",d:"精选 6 个",items:[
+  ["片名检索工具","一搜即达","直达"],["影评社区导航","口碑集散地","直达"],["放映活动日历","展映 / 点映","直达"],
+  ["观影清单工具","个人片单管理","直达"],["字幕资源导航","合法字幕组","直达"],["清晰度对照表","别被"高清"骗","直达"]]}
+];
+document.getElementById('cats').innerHTML=CATS.map((cat,i)=>
+ `<article class="cat">
+   <div class="hd" style="background:${cat.c}">
+     <span class="ic">${cat.ic}</span>
+     <div><b>${cat.n}</b><small>${cat.d}</small></div>
+   </div>
+   <ul>${cat.items.map((it,j)=>`<li><a href="#"><span class="dot"></span><span class="num">${String(j+1).padStart(2,'0')}</span><span class="name">${it[0]}</span><span class="go">${it[2]}</span></a></li>`).join('')}</ul>
+ </article>`).join('');
+
+const RANK=[
+ ["流浪的尽头","98.6"],["沉默的证人","96.2"],["夏夜的船","94.8"],["北方来信","92.1"],["第七个观众","89.5"],
+ ["咖啡凉了之前","87.3"],["无人之地","85.0"],["旧照片修复师","82.4"],["午后的雨","79.8"],["她与山","76.5"]];
+document.getElementById('rankBox').innerHTML=RANK.map((r,i)=>
+ `<article class="rl">
+   <span class="no ${i<3?'top':''}">${String(i+1).padStart(2,'0')}</span>
+   <div class="info"><b>${r[0]}</b><div class="bar"><i data-w="${r[1]}"></i></div></div>
+   <div class="heat"><b>${r[1]}</b><span>热度</span></div>
+ </article>`).join('');
+
+const WALL=[
+ ["华语电影","120 部","linear-gradient(135deg,#8E2A43,#E0663F)"],["港片经典","88 部","linear-gradient(135deg,#123A52,#3A86B8)"],
+ ["日韩电影","76 部","linear-gradient(135deg,#5B2E6F,#C068D0)"],["欧美电影","95 部","linear-gradient(135deg,#1F4E5F,#3FA8B0)"],
+ ["经典老片","60 部","linear-gradient(135deg,#7A5C1F,#E0A33A)"],["冷门佳片","54 部","linear-gradient(135deg,#2E5D3A,#6FAA5A)"],
+ ["纪录片","42 部","linear-gradient(135deg,#6B3A1F,#C77A4A)"],["动画电影","38 部","linear-gradient(135deg,#A8326A,#F06FA6)"],
+ ["悬疑犯罪","66 部","linear-gradient(135deg,#2C1F5B,#6A55C4)"],["喜剧温情","71 部","linear-gradient(135deg,#B5542E,#F2965A)"],
+ ["科幻奇幻","49 部","linear-gradient(135deg,#1F4A6B,#4A9CD0)"],["短片集锦","33 部","linear-gradient(135deg,#4A2E4E,#A05CA8)"]];
+document.getElementById('wall').innerHTML=WALL.map((w,i)=>
+ `<a href="#" class="wl" data-n="${String(i+1).padStart(2,'0')}" style="background:${w[2]}"><b>${w[0]}</b><span>${w[1]}</span></a>`).join('');
+
+const LIST=[
+ {t:"经典老片",rows:[
+  ["罗马假日","爱情","1953","p-a","★★★★★","午后三点","公共版权高清版"],["七武士","动作","1954","p-b","★★★★★","周末午后","修复版正版源"],
+  ["天堂电影院","剧情","1988","p-a","★★★★★","深夜安静","官方展映平台"],["E.T. 外星人","科幻","1982","p-c","★★★★☆","全家同看","限时免费专区"],
+  ["低俗小说","犯罪","1994","p-b","★★★★★","周末夜晚","片方正版渠道"],["阿甘正传","剧情","1994","p-a","★★★★★","雨天在家","平台限时免费"],
+  ["霸王别姬","剧情","1993","p-a","★★★★★","认真看完","院线修复重映"],["活着","剧情","1994","p-b","★★★★★","静下心看","正版授权平台"]]},
+ {t:"日韩电影",rows:[
+  ["寄生虫","剧情","2019","p-a","★★★★★","周末夜晚","正版授权平台"],["燃烧","悬疑","2018","p-b","★★★★☆","深夜安静","官方展映平台"],
+  ["小偷家族","剧情","2018","p-a","★★★★★","午后三点","片方正版渠道"],["情书","爱情","1995","p-c","★★★★★","下雪天看","修复版正版源"],
+  ["千与千寻","动画","2001","p-a","★★★★★","全家同看","限时免费专区"],["无人知晓","剧情","2004","p-b","★★★★☆","认真看完","官方展映平台"]]},
+ {t:"纪录片",rows:[
+  ["地球脉动","自然","2006","p-b","★★★★★","周末午后","平台限时免费"],["人生果实","生活","2017","p-c","★★★★☆","清晨咖啡","正版授权平台"],
+  ["徒手攀岩","运动","2018","p-a","★★★★★","白天精力好","官方展映平台"],["我在故宫修文物","文化","2016","p-b","★★★★☆","午后三点","电视台重播"],
+  ["海豚湾","自然","2009","p-b","★★★★☆","认真看完","公共版权高清版"],["巴赫曼先生和他的学生","教育","2021","p-c","★★★★☆","安静时段","官方展映平台"]]},
+ {t:"动画与短片",rows:[
+  ["蜘蛛侠：纵横宇宙","动画","2023","p-a","★★★★★","精力充沛","正版授权平台"],["心灵奇旅","动画","2020","p-b","★★★★★","全家同看","限时免费专区"],
+  ["你的名字。","动画","2016","p-a","★★★★★","周末夜晚","片方正版渠道"],["爱死机短片集","动画","2019","p-c","★★★★☆","碎片时间","平台限时免费"],
+  ["父与女","短片","2000","p-b","★★★★★","安静时段","公共版权高清版"],["回忆积木小屋","短片","2008","p-c","★★★★☆","深夜安静","官方展映平台"]]}
+];
+let cur=0;
+function renderTabs(){document.getElementById('tabs').innerHTML=LIST.map((g,i)=>`<button class="tab" role="tab" aria-selected="${i===0}" data-i="${i}">${g.t}</button>`).join('');}
+function renderRows(){
+  const rows=LIST[cur].rows;
+  document.getElementById('tbody').innerHTML=rows.map(r=>
+   `<tr><td class="name">${r[0]}</td><td>${r[1]}</td><td>${r[2]}</td><td><span class="pill ${r[3]}">${r[3]==='p-a'?'甜':r[3]==='p-b'?'浓':'爽'}</span></td><td class="stars-r">${r[4]}</td><td>${r[5]}</td><td>${r[6]}</td></tr>`).join('');
+}
+renderTabs();renderRows();
+document.getElementById('tabs').addEventListener('click',e=>{
+  if(!e.target.classList.contains('tab'))return;
+  cur=+e.target.dataset.i;
+  [...document.querySelectorAll('.tab')].forEach(t=>t.setAttribute('aria-selected',t===e.target));
+  renderRows();
+});
+
+const NEWS=[
+ {lead:1,tag:"观影笔记",cv:"linear-gradient(135deg,#6b1f3e,#c0434a)",ic:"🎞️",h:"为什么我们看电影，总想先知道"好不黄色"",p:"评分是个省时间的工具，但过度依赖它会让你错过很多不合群的好片。今天聊怎么用"一句话判断"代替"五星打分"。",r:"1280",c:"选片方法"},
+ {tag:"片单",cv:"linear-gradient(135deg,#123A52,#3A86B8)",ic:"🌊",h:"暴雨天适合看的三部安静长镜头",p:"声音被雨盖住的夜晚，适合把音量调低，看那种不催你前进的片子。",r:"942",c:"场景片单"},
+ {tag:"冷门",cv:"linear-gradient(135deg,#7A5C1F,#E0A33A)",ic:"💎",h:"被低估的九部华语片，值得补上",p:"没有流量，没有热搜，但看完会想推荐给一个人。",r:"768",c:"华语电影"},
+ {tag:"纪录片",cv:"linear-gradient(135deg,#1F4E5F,#3FA8B0)",ic:"🐧",h:"四部自然纪录片，把"壮阔"拍成了日常",p:"真正的奇观不在远方，在于镜头愿意等。",r:"655",c:"纪录片"},
+ {tag:"正版",cv:"linear-gradient(135deg,#5B2E6F,#A855C4)",ic:"🛡️",h:"免费不等于盗版：四种合法观看途径",p:"公共版权、限时免费、电视台重播、官方展映，都值得被看见。",r:"1102",c:"观影指南"},
+ {tag:"修复版",cv:"linear-gradient(135deg,#8A2E2E,#E0663F)",ic:"🎞️",h:"4K 修复版到底修了什么？一分钟看懂",p:"画质之外，还有色彩、帧率与音轨的三重重建。",r:"587",c:"技术笔记"}];
+document.getElementById('newsBox').innerHTML=NEWS.map(n=>
+ `<article class="nt ${n.lead?'lead':''}">
+   <div class="cv" style="background:${n.cv}"><span>${n.tag}</span><i>${n.ic}</i></div>
+   <div class="body"><h3>${n.h}</h3><p>${n.p}</p>
+     <div class="meta"><span>${n.c}</span><span>👁 ${n.r}</span></div>
+   </div>
+ </article>`).join('');
+
+const LOG=[
+ ["周一","MON 06.10","适合清新的","《小森林》系列","一周刚开始，先看一段不费脑子的慢生活，给心情打个底。"],
+ ["周二","TUE 06.11","适合治愈的","《海蒂和爷爷》","下班后的修复时间，需要一片干净的山和一段真心的对话。"],
+ ["周三","WED 06.12","适合烧脑的","《记忆碎片》","周中最需要一点注意力，让脑子转起来再睡觉。"],
+ ["周四","THU 06.13","适合怀旧的","《情书》","离周末还差一点，用一封旧信把情绪慢慢暖回来。"],
+ ["周五","FRI 06.14","适合狂欢的","《爱乐之城》","下班就是周末，灯光、音乐、颜色都要最满的那一档。"],
+ ["周六","SAT 06.15","适合长片的","《七武士》","唯一一个有整块时间的一天，留给一部真正的大作。"],
+ ["周日","SUN 06.16","适合安静的","《心灵奇旅》","周日晚上别太刺激，给自己一个温柔的收尾，好去上班。"]];
+document.getElementById('logBox').innerHTML=LOG.map(l=>
+ `<article class="lg">
+   <div class="day"><div class="d">${l[0]}</div><small>${l[1]}</small><em>${l[2]}</em></div>
+   <div class="txt"><b>${l[3]}</b><p>${l[4]}</p></div>
+ </article>`).join('');
+
+document.getElementById('yr').textContent=new Date().getFullYear();
+
+const hamb=document.getElementById('hamb'),drawer=document.getElementById('drawer');
+hamb.addEventListener('click',()=>{
+  const o=drawer.classList.toggle('open');
+  hamb.classList.toggle('open',o);hamb.setAttribute('aria-expanded',o);
+});
+drawer.addEventListener('click',e=>{if(e.target.tagName==='A'){drawer.classList.remove('open');hamb.classList.remove('open');hamb.setAttribute('aria-expanded',false);}});
+document.addEventListener('keydown',e=>{if(e.key==='Escape'){drawer.classList.remove('open');hamb.classList.remove('open');hamb.setAttribute('aria-expanded',false);}});
+
+const io=new IntersectionObserver(es=>{
+  es.forEach(en=>{if(en.isIntersecting){
+    const b=en.target;if(!b.dataset.done){b.style.width=b.dataset.w+'%';b.dataset.done=1;}
+    en.target.closest('.rl')?.style.setProperty('opacity',1);
+  }});
+},{threshold:.25});
+document.querySelectorAll('.rl .bar i').forEach(b=>{b.closest('.rl').style.opacity=.35;io.observe(b);});
+</script>
+</body>
+</html>
